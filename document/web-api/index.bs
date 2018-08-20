@@ -2,7 +2,7 @@
 Title: WebAssembly Web API
 Shortname: wasm-web-api
 Group: wasm
-Status: ED
+Status: WD
 Level: 1
 TR: https://www.w3.org/TR/wasm-web-api-1/
 ED: https://webassembly.github.io/spec/web-api/
@@ -230,3 +230,10 @@ stack frame representations; this allows engines to continue using their
 existing formats for JavaScript (which existing code may already be depending
 on) while still printing WebAssembly frames in a format consistent with
 JavaScript.
+
+<h2 class="no-num" id="changes">Changes</h2>
+
+Changes since the previous <a href="https://www.w3.org/TR/2018/WD-wasm-web-api-1-20180215/">Working Draft</a>:
+
+* [=compile a potential WebAssembly response=]. Changed step 7: "and resolve returnValue with result".
+* [[#serialization]]. Added the Serialization section.
