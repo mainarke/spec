@@ -26,18 +26,18 @@ Changes since the previous `Working Draft <https://www.w3.org/TR/2018/WD-wasm-co
 * :ref:`5.2.4 <binary-utf8>`: Fix utf8 encoding/decoding for 3- and 4-byte cases (:math:`b_1 - \hex{E0}` and :math:`b_1 - \hex{F0}`, respectively).
 * :ref:`5.4.4 <binary-memory.size>`: Renamed :math:`\K{current\_memory}` -> |MEMORYSIZE|, renamed :math:`\K{grow\_memory}` -> |MEMORYGROW|.
 
-* :ref:`6.5.5`: Rename current_memory -> memory.size, Rename grow_memory -> memory.grow
-* :ref:`6.3.3`: typo: "c ≠ '"' ∧ c ≠ '\'"
-* :ref:`6.6.3`: typo: "{locals id(param)*} well-formed"
-* :ref:`6.6.6.1`: Clarify offset is set to 0 in abbreviation
-* :ref:`6.6.7.1`: Clarify offset is set to 0 in abbreviation
-* :ref:`6.6.11`: Move optional table index to abbreviation (6.6.11.1)
-* :ref:`6.6.12`: Move optional memory index to abbreviation (6.6.12.1)
-* :ref:`A.1.module_exports`: typo: "...equals the length of externtype'"
-* :ref:`A.3.pop_ctrl`: changed to pop ctrl stack after pop_opds (since pop_opd accesses ctrl[0])
-* :ref:`A.3.validate`: "case (if t*) pop_opd(I32) ..."
-* :ref:`A.5`: "every function invocation always evaluates to a result of the right type (if it does not trap or diverge)"
-* :ref:`A.5."Host Function Instances"`: Allow for host function divergence.
-* :ref:`A.6`: Added Index of Types
-* :ref:`A.7`: Added Index of Instructions
-* :ref:`A.8`: Added Index of Semantic Rules
+* :ref:`6.3.3 <text-string>`: Fixed typo: ":math:`c \neq \text{"} \wedge c \neq \text{\backslash}`".
+* :ref:`6.5.5 <text-memory.size>`: Renamed :math:`\K{current\_memory}` -> |MEMORYSIZE|, renamed :math:`\K{grow\_memory}` -> |MEMORYGROW|.
+* :ref:`6.6.3 <text-typeuse>`: Fixed typo: ":math:`\{\ILOCALS~\F{id}(\Tparam)^\ast\} \idcwellformed)`".
+* :ref:`6.6.6.1 <text-table-abbrev>`: Clarify offset is set to 0 in abbreviation.
+* :ref:`6.6.7.1 <text-mem-abbrev>`: Clarify offset is set to 0 in abbreviation.
+* :ref:`6.6.11 <text-elem>`: Move optional table index to abbreviation section (6.6.11.1).
+* :ref:`6.6.12 <text-data>`: Move optional memory index to abbreviation section (6.6.12.1).
+* :ref:`A.1.module_exports <embed-exports>`: Fixed typo: "equals the length of :math:`{\externtype'}^\ast`".
+* :ref:`A.3.pop_ctrl <algo-valid>`: Changed to pop ctrl stack after pop_opds (since pop_opd accesses ctrl[0]).
+* :ref:`A.3.validate <algo-valid>`: Fix typo: "case (if t*) pop_opd(I32) ..."
+* :ref:`A.5 <soundness>`: "... every :ref:`function <syntax-func>` :ref:`invocation <exec-invocation>` always evaluates to a result of the right type (if it does not :ref:`trap <trap>` or diverge)"
+* :ref:`A.5."Host Function Instances" <valid-hostfuncinst>`: Allow for host function divergence.
+* :ref:`A.6 <index-type>`: Added Index of Types.
+* :ref:`A.7 <index-instr>`: Added Index of Instructions.
+* :ref:`A.8 <index-rules>`: Added Index of Semantic Rules.
